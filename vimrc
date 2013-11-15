@@ -191,3 +191,7 @@ set fo+=t
 " Airline fonts?
 let g:airline_powerline_fonts = 1
 
+" no automatic backup
+set nobackup
+set nowritebackup
+
