@@ -131,10 +131,10 @@ fi
 if [[ $HOSTNAME == outcast.scm.tees.ac.uk ]]; then
     export VIMERL_HASMANPATH=1
     export VIMERL_MANPATH=$HOME/lib/erlang/man
-elif [[ $HOSTNAME == scm-88587.local ]]; then 
+elif [[ $HOSTNAME == scm-88587.local ]]; then
     export VIMERL_HASMANPATH=1
     export VIMERL_MANPATH=/usr/local/lib/erlang/man
-elif [[ $HOSTNAME == julien-SATELLITE-PRO-C850-14D ]]; then 
+elif [[ $HOSTNAME == julien-SATELLITE-PRO-C850-14D ]]; then
     export VIMERL_HASMANPATH=1
     export VIMERL_MANPATH=/usr/lib/erlang/man
 elif [[ $HOSTNAME == AdminMac ]]; then # TODO CHANGE THIS FOR THE OFFICE MAC!
