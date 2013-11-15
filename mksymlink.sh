@@ -3,7 +3,7 @@
 NEWFOLDER=dotfiles
 OLDFOLDER=dotfiles_old
 
-if [[ $1 -eq maclabs ]]; then
+if [[ $1 == maclabs ]]; then
     CONFIGDIR=$HOME/Desktop/Network-Home
     echo $1
 else
