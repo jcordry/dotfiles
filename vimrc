@@ -74,6 +74,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'jimenezrick/vimerl'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tomtom/tlib_vim'
 Bundle 'tpope/vim-endwise'
@@ -151,7 +152,7 @@ vno <left> <Nop>
 vno <right> <Nop>
 
 " Powerline
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 set number
 set ruler
 set laststatus=2
