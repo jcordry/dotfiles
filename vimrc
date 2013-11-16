@@ -72,6 +72,7 @@ Bundle 'ervandew/supertab'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+Bundle 'kien/ctrlp.vim'
 Bundle 'jimenezrick/vimerl'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
@@ -136,6 +137,9 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" mapleader
+let mapleader=","
 
 " unmap the arrow keys
 no <down> <Nop>
