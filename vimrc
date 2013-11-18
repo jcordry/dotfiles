@@ -200,3 +200,6 @@ let g:airline_powerline_fonts = 1
 set nobackup
 set nowritebackup
 
+" ConqueShell <C-w> works!
+let g:ConqueTerm_CWInsert = 1
+let g:ConqueTerm_InsertOnEnter = 1
