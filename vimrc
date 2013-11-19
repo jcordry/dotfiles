@@ -1,13 +1,13 @@
 " An example for a vimrc file.
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2011 Apr 15
+" Maintainer:   Bram Moolenaar <Bram@vim.org>
+" Last change:  2011 Apr 15
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
+"         for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"       for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -22,14 +22,13 @@ set nocompatible
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup      " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup        " keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=50      " keep 50 lines of command line history
+set ruler       " show the cursor position all the time
+set incsearch       " do incremental searching
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -114,7 +113,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent        " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -136,7 +135,19 @@ set omnifunc=syntaxcomplete#Complete
 set smartindent
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
+
+" Unless we are using LaTeX/TeX,HTML or CSS, in which case we could just
+" use 2 spaces as tab
+if (has("autocmd"))
+    " TeX/LaTeX turn on spell automatically + smaller tab + wrap around
+    autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+
+    " HTML turn on spell automatically + smaller tab + wrap around
+    autocmd FileType html setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+endif
 
 " mapleader
 let mapleader=","
@@ -158,7 +169,6 @@ vno <right> <Nop>
 " Powerline
 " let g:Powerline_symbols = 'fancy'
 set number
-set ruler
 set laststatus=2
 set t_Co=256
 set term=screen-256color
@@ -175,9 +185,6 @@ if $VIMERL_HASMANPATH
     " let g:erlangManPath="~/lib/erlang/man/"
 endif
 
-" colorscheme
-colorscheme desert
-
 " mouse mac! Not sure if necessary
 if has("mouse")
     map <ScrollWheelUp> <C-Y>
@@ -189,9 +196,8 @@ cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W')
 cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
 
 " wraparound when writing some text
-" not entirely necessary.
+" not entirely necessary. Just in some cases
 set textwidth=80
-set fo+=t
 
 " Airline fonts?
 let g:airline_powerline_fonts = 1
@@ -203,3 +209,17 @@ set nowritebackup
 " ConqueShell <C-w> works!
 let g:ConqueTerm_CWInsert = 1
 let g:ConqueTerm_InsertOnEnter = 1
+
+" Have nice looking "invisible characteres"
+set listchars=tab:▸\ ,eol:¬,trail:-
+
+" colorscheme
+colorscheme desert256
+
+" colourscheme modes
+" this sould be for the colourscheme file; this is
+" for the colors of the eol/blank characters
+" highlight NonText guifg=#4a4a59
+" highlight SpecialKey guifg=#4a4a59
+
+set showcmd     " display incomplete commands
