@@ -210,7 +210,7 @@ set nowritebackup
 let g:ConqueTerm_CWInsert = 1
 let g:ConqueTerm_InsertOnEnter = 1
 
-" Have nice looking "invisible characteres"
+" Have nice looking "invisible characters"
 set listchars=tab:▸\ ,eol:¬,trail:-
 
 " colorscheme
