@@ -40,7 +40,7 @@ if [[ `hostname` == SCM-88053 ]]; then
     alias xterm='xterm -fg white -bg black'
 fi
 
-if [[ `hostname` == Administrators-iMac-2.local ]]; then
+if [[ `hostname` == SCM-88364.local ]]; then
     alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 fi

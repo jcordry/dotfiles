@@ -116,7 +116,7 @@ fi
 
 if [[ $HOSTNAME == SCM-88053 ]]; then
     export PATH=$PATH:/cygdrive/c/Program\ Files\ \(x86\)/Foxit\ Software/Foxit\ Reader/:/cygdrive/c/Program\ Files\ \(x86\)/OpenOffice.org\ 3/program/:$HOME/home/Downloads/sonar-2.13.1/sonar-runner-1.2/bin:/cygdrive/c/Program\ Files\ \(x86\)/OpenOffice.org\ 3/program/:/cygdrive/c/Program\ Files/7-Zip/:/cygdrive/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 10.0/Common7/IDE/:/cygdrive/d/Program\ Files\ \(x86\)/Eclipse/eclipse-SDK-3.7-win32-x86_64/eclipse/:/cygdrive/c/Program\ Files\ \(x86\)/Microsoft\ Office/Office14/:/cygdrive/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/:/cygdrive/c/Program\ Files\ \(x86\)/GIMP-2.0/bin/:/cygdrive/c/Program\ Files\ \(x86\)/Microsoft\ Office/Office14/:/cygdrive/c/Program\ Files\ \(x86\)/OpenOffice.org\ 3/program/:/cygdrive/c/Program\ Files/Java/jdk1.7.0/bin:/cygdrive/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 10.0/VC/bin/:/cygdrive/c/Program\ Files\ \(x86\)/LibreOffice\ 3.6/program/:/cygdrive/c/Program\ Files\ \(x86\)/erl5.8.4/bin/:/cygdrive/c/Program\ Files\ \(x86\)/7-Zip
-elif [[ $HOSTNAME == Administrators-iMac-2.local ]]; then
+elif [[ $HOSTNAME == SCM-88364.local ]]; then
     export PATH=/usr/local/bin:$PATH:$HOME/bin:.
 elif [[ $HOSTNAME == scm-88587.local ]]; then
     export PATH=/usr/local/bin:$PATH:$HOME/bin:.
@@ -137,7 +137,7 @@ elif [[ $HOSTNAME == scm-88587.local ]]; then
 elif [[ $HOSTNAME == julien-SATELLITE-PRO-C850-14D ]]; then
     export VIMERL_HASMANPATH=1
     export VIMERL_MANPATH=/usr/lib/erlang/man
-elif [[ $HOSTNAME == AdminMac ]]; then # TODO CHANGE THIS FOR THE OFFICE MAC!
+elif [[ $HOSTNAME == SCM-88364.local ]]; then # TODO CHANGE THIS FOR THE OFFICE MAC!
     export VIMERL_HASMANPATH=1
     export VIMERL_MANPATH=/usr/local/lib/erlang/man
 fi
