@@ -223,3 +223,6 @@ colorscheme desert256
 " highlight SpecialKey guifg=#4a4a59
 
 set showcmd     " display incomplete commands
+
+" Reload the vimrc
+:nmap <Leader>s :source $MYVIMRC<CR>
