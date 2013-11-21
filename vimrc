@@ -82,7 +82,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/Conque-Shell'
+" Bundle 'vim-scripts/Conque-Shell'
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
