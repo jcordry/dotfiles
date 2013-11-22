@@ -145,6 +145,9 @@ if (has("autocmd"))
     " TeX/LaTeX turn on spell automatically + smaller tab + wrap around
     autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 
+    " Markdown turn on spell automatically + smaller tab + wrap around
+    autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+
     " HTML turn on spell automatically + smaller tab + wrap around
     autocmd FileType html setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
     autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
