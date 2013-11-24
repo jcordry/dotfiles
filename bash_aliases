@@ -45,6 +45,10 @@ if [[ `hostname` == SCM-88364.local ]]; then
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 fi
 
+if [[ `hostname` == scm-88587.local ]]; then
+    alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+fi
+
 if [[ `hostname` == vlad ]]; then
     alias xterm="xterm -fn -misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso8859-1"
 else
