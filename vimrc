@@ -144,6 +144,10 @@ set expandtab
 if (has("autocmd"))
     " TeX/LaTeX turn on spell automatically + smaller tab + wrap around
     autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType plaintex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+
+    " Text turn on spell automatically + smaller tab + wrap around
+    autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 
     " Markdown turn on spell automatically + smaller tab + wrap around
     autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
