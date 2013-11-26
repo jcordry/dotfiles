@@ -222,7 +222,7 @@ let g:ConqueTerm_InsertOnEnter = 1
 set listchars=tab:▸\ ,eol:¬,trail:-
 
 " colorscheme
-colorscheme desert256
+colorscheme molokai
 
 " colourscheme modes
 " this sould be for the colourscheme file; this is
