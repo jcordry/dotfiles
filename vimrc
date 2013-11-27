@@ -194,10 +194,10 @@ if $VIMERL_HASMANPATH
 endif
 
 " mouse mac! Not sure if necessary
-if has("mouse")
-    map <ScrollWheelUp> <C-Y>
-    map <ScrollWheelDown> <C-E>
-endif
+" if has("mouse")
+"     map <ScrollWheelUp> <C-Y>
+"     map <ScrollWheelDown> <C-E>
+" endif
 
 " Allow W to be used as w (Q as q)
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
