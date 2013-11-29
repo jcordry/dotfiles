@@ -13,7 +13,7 @@ fi
 mkdir -p $CONFIGDIR/$OLDFOLDER
 
 FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions inputrc
-bash_profile"
+bash_profile wgetrc"
 cd $HOME
 for file in $FILE_LIST; do
     echo mv .$file $CONFIGDIR/$OLDFOLDER
