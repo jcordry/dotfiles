@@ -12,9 +12,10 @@ fi
 
 mkdir -p $CONFIGDIR/$OLDFOLDER
 
-FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions"
+FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions inputrc
+bash_profile"
 cd $HOME
 for file in $FILE_LIST; do
-    mv .$file $CONFIGDIR/$OLDFOLDER
-    ln -s $CONFIGDIR/$NEWFOLDER/$file .$file
+    echo mv .$file $CONFIGDIR/$OLDFOLDER
+    echo ln -s $CONFIGDIR/$NEWFOLDER/$file .$file
 done
