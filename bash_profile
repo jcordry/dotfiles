@@ -11,7 +11,7 @@ export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='demula'
+export BASH_IT_THEME='nwinkler'
 
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@git.domain.com'
@@ -42,4 +42,4 @@ export IRC_CLIENT='irssi'
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-source .bashrc
+source $HOME/.bashrc
