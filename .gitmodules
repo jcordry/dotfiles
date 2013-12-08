@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-sparkup"]
 	path = vim/bundle/vim-sparkup
 	url = https://github.com/tristen/vim-sparkup.git
+[submodule "vim/bundle/vim-unimpaired"]
+	path = vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
