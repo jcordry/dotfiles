@@ -120,6 +120,9 @@ elif [[ $HOSTNAME == SCM-88364.local ]]; then
     export PATH=/usr/local/bin:$PATH:$HOME/bin:.
 elif [[ $HOSTNAME == scm-88587.local ]]; then
     export PATH=/usr/local/bin:$PATH:$HOME/bin:.
+elif [[ $HOSTNAME == linux*.scm.tees.ac.uk ]]; then
+    echo $HOSTNAME
+    export PATH=/usr/local/bin:$HOME/bin:$PATH:.
 fi
 
 export EDITOR=/usr/bin/vim
@@ -142,3 +145,4 @@ elif [[ $HOSTNAME == SCM-88364.local ]]; then # TODO CHANGE THIS FOR THE OFFICE 
     export VIMERL_MANPATH=/usr/local/lib/erlang/man
 fi
 
+export LD_LIBRARY_PATH=/usr/gnat/lib:/lib:/usr/lib:/home/scm-staff/u0026939/lib/:~/lib/
