@@ -234,3 +234,11 @@ set showcmd     " display incomplete commands
 
 " Reload the vimrc
 :nmap <Leader>s :source $MYVIMRC<CR>
+
+" Bubble up and down selected text
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
