@@ -66,7 +66,7 @@
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "vim/bundle/vim-latex"]
 	path = vim/bundle/vim-latex
-	url = https://github.com/jcf/vim-latex.git
+	url = git@github.com:jcordry/vim-latex.git
 [submodule "vim/bundle/c.vim"]
 	path = vim/bundle/c.vim
-	url = https://github.com/vim-scripts/c.vim.git
+	url = git@github.com:jcordry/c.vim.git
