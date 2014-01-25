@@ -246,3 +246,16 @@ vmap <C-Down> ]egv
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
 
+" LaTeX
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+" Mappings for LaTeX suite
+nmap <C-l> <F5>
+nmap <C-o> <F9>
+nmap <C-;> <F7>
