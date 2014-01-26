@@ -254,8 +254,3 @@ filetype plugin on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-
-" Mappings for LaTeX suite
-nmap <C-l> <F5>
-nmap <C-o> <F9>
-nmap <C-;> <F7>
