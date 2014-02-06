@@ -70,3 +70,6 @@
 [submodule "vim/bundle/c.vim"]
 	path = vim/bundle/c.vim
 	url = git@github.com:jcordry/c.vim.git
+[submodule "vim/bundle/gist"]
+	path = vim/bundle/gist
+	url = https://github.com/mattn/gist-vim.git
