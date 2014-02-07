@@ -1,4 +1,4 @@
-set guifont=Monaco:h18
+set guifont=MonacoForPowerline:h24
 " An example for a gvimrc file.
 " The commands in this are executed when the GUI is started.
 "
@@ -58,3 +58,4 @@ if version >= 500
   highlight Special gui=NONE guibg=grey95
 
 endif
+colorscheme molokai
