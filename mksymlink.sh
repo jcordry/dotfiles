@@ -13,9 +13,9 @@ fi
 mkdir -p $CONFIGDIR/$OLDFOLDER
 
 FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions inputrc
-bash_profile wgetrc"
+bash_profile wgetrc tmux.conf"
 cd $HOME
 for file in $FILE_LIST; do
-    echo mv .$file $CONFIGDIR/$OLDFOLDER
-    echo ln -s $CONFIGDIR/$NEWFOLDER/$file .$file
+    mv .$file $CONFIGDIR/$OLDFOLDER
+    ln -s $CONFIGDIR/$NEWFOLDER/$file .$file
 done
