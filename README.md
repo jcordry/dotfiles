@@ -1,3 +1,7 @@
+=======
+dotfiles
+========
+
 # My Dotfiles
 
 This is an attempt at creating a repository for my dotfiles. I intend to use it
