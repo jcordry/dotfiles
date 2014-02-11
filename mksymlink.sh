@@ -13,7 +13,7 @@ fi
 mkdir -p $CONFIGDIR/$OLDFOLDER
 
 FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions inputrc
-bash_profile wgetrc tmux.conf"
+bash_profile wgetrc tmux.conf gitconfig gitignore"
 cd $HOME
 for file in $FILE_LIST; do
     mv .$file $CONFIGDIR/$OLDFOLDER

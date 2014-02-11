@@ -5,10 +5,10 @@ to store and maintain my vimrc, vim (pluggins), bashrc, profile, bash_aliases,
 bash_functions and perhaps a few others at a later stage (emacs, zsh, tmux,
 mutt, input).
 
-To install:
+##To install:
 
-        $ git clone https://github.com/jcordry/dotfiles.git ~/dotfiles
-        $ cd ~/dotfiles
-        $ git submodule init && git submodule update
-        $ ./mksyslink.sh
+    $ git clone https://github.com/jcordry/dotfiles.git ~/dotfiles
+    $ cd ~/dotfiles
+    $ ./extract.sh
+    $ ./mksyslink.sh
 
