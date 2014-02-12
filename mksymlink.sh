@@ -28,7 +28,7 @@ cd -
 cd ~/bin
 for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     linkfile=`basename $file`
-    if [ ! -f $linkfile ]]; then
+    if [[ ! -f $linkfile ]]; then
         ln -s $file $linkfile
     fi
 done
