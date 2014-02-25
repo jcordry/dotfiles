@@ -156,7 +156,7 @@ if (has("autocmd"))
     autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 
     " Markdown turn on spell automatically + smaller tab + wrap around
-    autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=4 shiftwidth=4 softtabstop=4 fo+=t
 
     " HTML turn on spell automatically + smaller tab + wrap around
     autocmd FileType html setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
