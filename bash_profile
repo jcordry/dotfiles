@@ -39,6 +39,11 @@ export IRC_CLIENT='irssi'
 # https://github.com/xvzf/vcprompt
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
+# load bash completions
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
