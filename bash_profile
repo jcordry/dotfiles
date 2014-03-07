@@ -40,8 +40,11 @@ export IRC_CLIENT='irssi'
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
 # load bash completions
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+if [[ $OSTYPE == "darwin13" ]]; then
+    echo DARWIN13
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
 fi
 
 # Load Bash It
