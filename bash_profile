@@ -41,7 +41,6 @@ export IRC_CLIENT='irssi'
 
 # load bash completions
 if [[ $OSTYPE == "darwin13" ]]; then
-    echo DARWIN13
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
