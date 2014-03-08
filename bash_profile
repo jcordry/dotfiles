@@ -49,4 +49,10 @@ fi
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-source $HOME/.bashrc
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        source "$HOME/.bashrc"
+    fi
+fi
