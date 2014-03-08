@@ -18,7 +18,7 @@ cd $HOME
 for file in $FILE_LIST; do
     diff $CONFIGDIR/$NEWFOLDER/$file .$file > /dev/null 2>&1
     isdiff=$?
-    if [[ $isdiff -eq 1 ]]; then
+    if [[ $isdiff -ge 1 ]]; then
         mv .$file $CONFIGDIR/$OLDFOLDER
         ln -s $CONFIGDIR/$NEWFOLDER/$file .$file
     fi
