@@ -73,3 +73,12 @@
 [submodule "vim/bundle/gist"]
 	path = vim/bundle/gist
 	url = https://github.com/mattn/gist-vim.git
+[submodule "vim/bundle/tmuxline-vim"]
+	path = vim/bundle/tmuxline-vim
+	url = git@github.com:edkolev/tmuxline.vim.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = git@github.com:godlygeek/tabular.git
+[submodule "vim/bundle/promptline"]
+	path = vim/bundle/promptline
+	url = git@github.com:edkolev/promptline.vim.git

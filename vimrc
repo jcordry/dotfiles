@@ -1,26 +1,34 @@
-" An example for a vimrc file.
-"
-" Maintainer:   Bram Moolenaar <Bram@vim.org>
-" Last change:  2011 Apr 15
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"         for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"       for OpenVMS:  sys$login:.vimrc
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                                                              "
+" An example for a vimrc file.                                                 "
+"                                                                              "
+" Maintainer:   Bram Moolenaar <Bram@vim.org>                                  "
+" Last change:  2011 Apr 15                                                    "
+"                                                                              "
+" To use it, copy it to                                                        "
+"     for Unix and OS/2:  ~/.vimrc                                             "
+"         for Amiga:  s:.vimrc                                                 "
+"  for MS-DOS and Win32:  $VIM\_vimrc                                          "
+"       for OpenVMS:  sys$login:.vimrc                                         "
+"                                                                              "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("vms")
   set nobackup      " do not keep a backup file, use versions instead
 else
@@ -33,9 +41,11 @@ set incsearch       " do incremental searching
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
@@ -45,6 +55,7 @@ if has('mouse')
   set mouse=a
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -58,6 +69,7 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -71,10 +83,13 @@ Bundle 'ervandew/supertab'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
-Bundle 'kien/ctrlp.vim'
+Bundle 'jcordry/c.vim'
+Bundle 'jcordry/vim-latex'
 Bundle 'jimenezrick/vimerl'
-Bundle 'scrooloose/syntastic'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tomtom/tlib_vim'
 Bundle 'tpope/vim-endwise'
@@ -82,14 +97,14 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
-Bundle 'mattn/gist-vim'
-Bundle 'jcordry/vim-latex'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'tristen/vim-sparkup.git'
 Bundle 'vim-scripts/taglist'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'jcordry/c.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'edkolev/tmuxline.vim'
 " Bundle 'vim-scripts/Conque-Shell' ?
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
@@ -132,12 +147,15 @@ if !exists(":DiffOrig")
               \ | wincmd p | diffthis
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen
 execute pathogen#infect()
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set omni completion
 set omnifunc=syntaxcomplete#Complete
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set tabs to 4 chars
 set smartindent
 set tabstop=4
@@ -163,6 +181,7 @@ if (has("autocmd"))
     autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mapleader
 let mapleader=","
 
@@ -180,6 +199,7 @@ vno <up> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 " let g:Powerline_symbols = 'fancy'
 set number
@@ -187,6 +207,7 @@ set laststatus=2
 set t_Co=256
 set term=screen-256color
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vimerl
 let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
 let g:erlangHighlightErrors=1
@@ -205,28 +226,38 @@ endif
 "     map <ScrollWheelDown> <C-E>
 " endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Allow W to be used as w (Q as q)
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " wraparound when writing some text
 " not entirely necessary. Just in some cases
 set textwidth=80
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline fonts?
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = '>'
+" let g:airline#extensions#tabline#left_alt_sep = '>'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " no automatic backup
 set nobackup
 set nowritebackup
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ConqueShell <C-w> works!
 let g:ConqueTerm_CWInsert = 1
 let g:ConqueTerm_InsertOnEnter = 1
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Have nice looking "invisible characters"
 set listchars=tab:▸\ ,eol:¬,trail:-
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colorscheme
 colorscheme molokai
 
@@ -238,9 +269,11 @@ colorscheme molokai
 
 set showcmd     " display incomplete commands
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Reload the vimrc
 :nmap <Leader>s :source $MYVIMRC<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bubble up and down selected text
 " Bubble single lines
 nmap <C-Up> [e
@@ -252,6 +285,7 @@ vmap <C-Down> ]egv
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LaTeX
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
@@ -260,3 +294,16 @@ filetype plugin on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
