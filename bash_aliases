@@ -157,7 +157,6 @@ alias k='clear'
 alias md='mkdir -p'
 alias pager=''
 alias pc='pushd `pwd`'
-alias piano='pianobar'
 alias po='popd'
 alias pu='pushd'
 alias q='exit'
@@ -176,6 +175,7 @@ alias xterm='xterm -fg white -bg black'
 alias z='fasd_cd -d'
 alias zz='fasd_cd -d -i' # cd with interactive selection
 
+# alias piano='pianobar'
 # alias irc='irssi'
 ## Maven
 # alias mci='mvn clean install'
