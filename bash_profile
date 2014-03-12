@@ -40,14 +40,18 @@ export IRC_CLIENT='irssi'
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
 # load bash completions
-if [[ $OSTYPE == "darwin13" ]]; then
+if [[ $OSTYPE == "darwin*" ]]; then
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
 fi
 
 # Load Bash It
-source $BASH_IT/bash_it.sh
+# source $BASH_IT/bash_it.sh
+source $HOME/dotfiles/promptline.sh
+
+# Fasd
+eval "$(fasd --init bash-hook bash-ccomp bash-ccomp-install posix-alias)"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -56,3 +60,4 @@ if [ -n "$BASH_VERSION" ]; then
         source "$HOME/.bashrc"
     fi
 fi
+
