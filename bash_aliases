@@ -50,6 +50,13 @@ if [[ `hostname` == scm-88587.local ]]; then
 fi
 
 if [[ `uname` == Darwin ]]; then
+    alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+    alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+    alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+    alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+    alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+    alias spotoff="sudo mdutil -a -i off"
+    alias spoton="sudo mdutil -a -i on"
     alias chrome='open -a google\ chrome'
     alias chromium='open -a chromium'
     alias dashcode='open -a dashcode'
@@ -85,6 +92,7 @@ else
 fi
 
 # alias -='cd -'
+alias -- -="cd -"
 alias ....='cd ../../..'
 alias ...='cd ../..'
 alias ..='cd ..'
@@ -101,6 +109,7 @@ alias L='cat ~/.dirs'
 alias U='source ~/.dirs'
 alias _='sudo'
 alias __git_find_subcommand='__git_find_on_cmdline'
+alias week='date +%V' # Get week number
 alias a='fasd -a'
 alias c='clear'
 alias cd='cd_func'
