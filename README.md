@@ -12,3 +12,6 @@ mutt, input).
     $ ./extract.sh
     $ ./mksyslink.sh
 
+##To try Mathias Bynens gitless install:
+
+    $ cd; curl -#L https://github.com/jcordr/dotfiles/tarball/master | tar -xzv --strip-components 1
