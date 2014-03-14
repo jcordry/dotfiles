@@ -1,0 +1,22 @@
+#Written by GNOME Terminal 2.31.3
+
+[GNOME Terminal Configuration]
+Version=1
+CompatVersion=1
+FactoryEnabled=true
+Windows=Window0;
+
+[Window0]
+MenubarVisible=true
+Role=gnome-terminal-window-13707--53454981-1394808682
+Fullscreen=true
+ActiveTerminal=Terminal0x1541430
+Geometry=91x33+0+0
+Terminals=Terminal0x1541430;
+
+[Terminal0x1541430]
+ProfileID=Default
+WorkingDirectory=/home/scm-staff/u0026939
+Zoom=1
+Width=91
+Height=33

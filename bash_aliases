@@ -49,6 +49,10 @@ if [[ `hostname` == scm-88587.local ]]; then
     alias vlc='open -a VLC'
 fi
 
+if [[ `uname` = Linux ]]; then
+    alias open=xdg-open
+fi
+
 if [[ `uname` == Darwin ]]; then
     alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
     alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -91,7 +95,6 @@ else
     alias xterm="xterm -fg white -bg black"
 fi
 
-# alias -='cd -'
 alias -- -="cd -"
 alias ....='cd ../../..'
 alias ...='cd ../..'
