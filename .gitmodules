@@ -82,3 +82,6 @@
 [submodule "vim/bundle/promptline"]
 	path = vim/bundle/promptline
 	url = git@github.com:edkolev/promptline.vim.git
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch.git
