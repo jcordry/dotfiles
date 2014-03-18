@@ -24,6 +24,11 @@ for file in $FILE_LIST; do
 done
 cd -
 
+if [[ ! -d $HOME/bin ]]; then
+    mkdir $HOME/bin
+    chmod 755 $HOME/bin
+fi
+
 cd ~/bin
 for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     linkfile=`basename $file`
