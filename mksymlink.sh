@@ -13,7 +13,8 @@ fi
 mkdir -p $CONFIGDIR/$OLDFOLDER
 
 FILE_LIST="bashrc profile vimrc vim gvimrc bash_aliases bash_functions inputrc
-bash_profile bash_path wgetrc tmux.conf tmux_snap.conf gitconfig gitignore"
+bash_profile bash_path wgetrc tmux.conf tmux_snap.conf gitconfig gitignore
+Xresources startxwinrc"
 cd $HOME
 for file in $FILE_LIST; do
     diff $CONFIGDIR/$NEWFOLDER/$file .$file > /dev/null 2>&1
