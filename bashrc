@@ -109,6 +109,8 @@ if [ -f "${HOME}/.bash_functions" ]; then
 fi
 
 
+# PS1
+# 
 # Now declare in promptline.sh
 # if [[ `uname` == Darwin ]]; then
 #     export PS1="\e[0;37m\u@\h:\w>\e[m "
