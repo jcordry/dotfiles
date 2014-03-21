@@ -8,7 +8,7 @@
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
 [push]
-    default = simple
+    default = matching
 [merge]
     tool = vimdiff
 [color]
@@ -139,4 +139,4 @@
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
 [include]
-  path = .gitconfig.user
+  path = ~/.gitconfig.user
