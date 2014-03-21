@@ -126,6 +126,7 @@ fi
 # Now declare in promptline.sh
 # if [[ `uname` == Darwin ]]; then
 #     export PS1="\e[0;37m\u@\h:\w>\e[m "
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # else
 #     export PS1="\e[m\u@\h:\w>\e[m "
 # fi
@@ -133,6 +134,10 @@ fi
 ################################################################################
 # Completions
 #
+# Show me the git status in the prompt
+GIT_PS1_SHOWUNTRACKEDFILES="1"
+# Include git completion
+source ~/dotfiles/git.completion.bash
 
 ################################################################################
 # Path
