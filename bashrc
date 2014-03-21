@@ -13,11 +13,14 @@
 # would be benificial to all, please feel free to send
 # a patch to the cygwin mailing list.
 
+
+################################################################################
 # User dependent .bashrc file
 
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
+################################################################################
 # Shell Options
 #
 # See man bash for more options...
@@ -38,6 +41,7 @@
 # for example, cd /vr/lgo/apaache would find /var/log/apache
 # shopt -s cdspell
 
+################################################################################
 # Completion options
 #
 # These completion tuning parameters change the default behavior of bash_completion:
@@ -55,6 +59,7 @@
 # Any completions you add in ~/.bash_completion are sourced last.
 [[ -f /etc/bash_completion ]] && . /etc/bash_completion
 
+################################################################################
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -75,17 +80,21 @@ export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls' # Ignore the ls command as well
 # Whenever displaying the prompt, write the previous line to disk
 # export PROMPT_COMMAND="history -a"
 
+################################################################################
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+################################################################################
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
+################################################################################
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+################################################################################
 # Aliases
 #
 # Some people use a different file for aliases
@@ -93,14 +102,17 @@ if [ -f "${HOME}/.bash_aliases" ]; then
   source "${HOME}/.bash_aliases"
 fi
 
+################################################################################
 # Umask
 #
 #/etc/profile sets 022, removing write perms to group + others.
+umask 022
 # Set a more restrictive umask: i.e. no exec perms for others:
 # umask 027
 # Paranoid: neither group nor others have any perms:
 # umask 077
 
+################################################################################
 # Functions
 #
 # Some people use a different file for functions
@@ -108,9 +120,9 @@ if [ -f "${HOME}/.bash_functions" ]; then
   source "${HOME}/.bash_functions"
 fi
 
-
+################################################################################
 # PS1
-# 
+#
 # Now declare in promptline.sh
 # if [[ `uname` == Darwin ]]; then
 #     export PS1="\e[0;37m\u@\h:\w>\e[m "
@@ -118,6 +130,11 @@ fi
 #     export PS1="\e[m\u@\h:\w>\e[m "
 # fi
 
+################################################################################
+# Completions
+#
+
+################################################################################
 # Path
 #
 # Some people use a different file for path
@@ -125,8 +142,10 @@ if [ -f "${HOME}/.bash_path" ]; then
   source "${HOME}/.bash_path"
 fi
 
+################################################################################
 export EDITOR=/usr/bin/vim
 
+################################################################################
 # We need variables for vimerl!
 if [[ $HOSTNAME == julien-SATELLITE-PRO-C850-14D ]]; then
     export VIMERL_COMPLETIONGREP=1
@@ -145,4 +164,5 @@ elif [[ $HOSTNAME == SCM-88364.local ]]; then # TODO CHANGE THIS FOR THE OFFICE 
     export VIMERL_MANPATH=/usr/local/lib/erlang/man
 fi
 
+################################################################################
 export LD_LIBRARY_PATH=/usr/gnat/lib:/lib:/usr/lib:/home/scm-staff/u0026939/lib/:~/lib/
