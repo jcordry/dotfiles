@@ -1,8 +1,8 @@
 # My Dotfiles
 
 This is an attempt at creating a repository for my dotfiles. I intend to use it
-to store and maintain my vimrc, vim (pluggins), bashrc, profile, bash_aliases,
-bash_functions and perhaps a few others at a later stage (emacs, zsh, tmux,
+to store and maintain my vimrc, Vim (pluggins), bashrc, profile, bash_aliases,
+bash_functions and perhaps a few others at a later stage (Emacs, zsh, tmux,
 mutt, input).
 
 ##To install:
