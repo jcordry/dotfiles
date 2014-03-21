@@ -136,8 +136,17 @@ export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #
 # Show me the git status in the prompt
 GIT_PS1_SHOWUNTRACKEDFILES="1"
+GIT_PS1_SHOWUPSTREAM=auto
 # Include git completion
-source ~/dotfiles/git.completion.bash
+source $HOME/dotfiles/git.completion.bash
+# Include brew completion
+if [[ $OSTYPE = darwin* ]]; then
+    source $HOME/dotfiles/brew.completion.bash
+fi
+# Include ssh completion
+source $HOME/dotfiles/ssh.completion.bash
+# Include tmux completion
+source $HOME/dotfiles/tmux.completion.bash
 
 ################################################################################
 # Path
