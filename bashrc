@@ -108,11 +108,13 @@ if [ -f "${HOME}/.bash_functions" ]; then
   source "${HOME}/.bash_functions"
 fi
 
-if [[ `uname` == Darwin ]]; then
-    export PS1="\e[0;37m\u@\h:\w>\e[m "
-else
-    export PS1="\e[m\u@\h:\w>\e[m "
-fi
+
+# Now declare in promptline.sh
+# if [[ `uname` == Darwin ]]; then
+#     export PS1="\e[0;37m\u@\h:\w>\e[m "
+# else
+#     export PS1="\e[m\u@\h:\w>\e[m "
+# fi
 
 # Path
 #
