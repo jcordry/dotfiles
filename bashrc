@@ -148,7 +148,7 @@ source $HOME/dotfiles/ssh.completion.bash
 # Include tmux completion
 source $HOME/dotfiles/tmux.completion.bash
 # Include general completion
-source $HOME/dotfiles/default.completion.bash
+source $HOME/dotfiles/defaults.completion.bash
 
 ################################################################################
 # Path
