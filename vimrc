@@ -308,3 +308,11 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Adjustments to the promptline
+let g:promptline_preset = {
+        \'a'    : [ promptline#slices#host() ],
+        \'c'    : [ promptline#slices#cwd() ],
+        \'y'    : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
+        \'warn' : [ promptline#slices#last_exit_code() ]}

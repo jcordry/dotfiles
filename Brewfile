@@ -36,7 +36,7 @@ install pv
 #install exiv2
 install git
 install imagemagick --with-webp
-install lynx
+# install lynx
 install node
 install pigz
 install rename

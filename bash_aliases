@@ -50,7 +50,7 @@ if [[ `hostname` == scm-88587.local ]]; then
 fi
 
 if [[ `uname` = Linux ]]; then
-    alias open=xdg-open
+    alias open='xdg-open'
 fi
 
 if [[ `uname` == Darwin ]]; then
@@ -148,6 +148,7 @@ alias sf='fasd -sif'
 alias z='fasd_cd -d'
 alias zz='fasd_cd -d -i' # cd with interactive selection
 alias v='f -e vim'
+alias o='a -e open'
 
 # Misc
 alias -- -="cd -"
