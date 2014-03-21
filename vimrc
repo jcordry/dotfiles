@@ -309,7 +309,6 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Adjustments to the promptline
 let g:promptline_preset = {
