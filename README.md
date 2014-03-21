@@ -14,4 +14,4 @@ mutt, input).
 
 ##To try Mathias Bynens gitless install:
 
-    $ cd; curl -#L https://github.com/jcordry/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+    $ cd; curl -#L https://github.com/jcordry/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md}
