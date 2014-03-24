@@ -5,13 +5,14 @@ to store and maintain my vimrc, Vim (pluggins), bashrc, profile, bash_aliases,
 bash_functions and perhaps a few others at a later stage (Emacs, zsh, tmux,
 mutt, input). This now includes:
 
-- A vimrc/vim with vim plugins as submodules using Pathogen/Vundle
-- A suite of bash configuration files
-- Tmux config files
-- Inputrc
-- Brew config files for OSX
-- OSX config files from Mathias Bynens
-- Git config files
+- A vimrc/vim with vim plugins as submodules using Pathogen/Vundle.
+- A suite of bash configuration files.
+- Tmux config files.
+- Inputrc.
+- Brew config files for OSX.
+- OSX config files from Mathias Bynens.
+- Git config files.
+- Some configuration files for CygwinX.
 
 I have tried to emulate some functions from bash-it for completion, aliases...
 
