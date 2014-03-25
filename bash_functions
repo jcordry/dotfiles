@@ -67,3 +67,22 @@ cd_func ()
 }
 
 alias cd=cd_func
+
+# Creates a directory if it does not exist already and gets into it.
+mkdir_cd() {
+    DIR="$1"
+    if [[ ! -d "$DIR" ]]; then
+        mkdir "$DIR"
+    fi
+    cd "$DIR"
+}
+
+# Creates a symbolic link to the target in the current folder if it does not
+# exist already.
+mklink() {
+    TARGET="$1"
+    BASE=`basename "$TARGET"`
+    if [[ ! -h "$BASE" ]]; then
+        ln -s "$TARGET" "$BASE"
+    fi
+}
