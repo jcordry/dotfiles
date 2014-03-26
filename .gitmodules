@@ -88,3 +88,6 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/bundle/bash-support"]
+	path = vim/bundle/bash-support
+	url = https://github.com/vim-scripts/bash-support.vim.git
