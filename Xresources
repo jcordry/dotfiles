@@ -7,6 +7,6 @@ XTerm.vt100.geometry : 79x25
 XTerm*scrollBar      : true
 XTerm*rightScrollBar : true
 XTerm*saveLines      : 10000
-XTerm*faceName       : Inconsolata for Powerline Medium
+XTerm*faceName       : Inconsolata for Powerline
 XTerm*faceSize       : 14
 XTerm*toolBar        : off

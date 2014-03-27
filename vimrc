@@ -316,3 +316,18 @@ let g:promptline_preset = {
         \'c'    : [ promptline#slices#cwd() ],
         \'y'    : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tagbar shortcut
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tagbar shortcut
+nnoremap <leader>. :CtrlPTag<cr>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Bash support
+let g:BASH_AuthorName = 'Julien Cordry'
+let g:BASH_Email      = 'jcordry@tees.ac.uk'
+let g:BASH_Company    = 'Teesside University'

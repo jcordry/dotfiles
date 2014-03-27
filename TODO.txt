@@ -1,0 +1,15 @@
+To be added:
+
+- Look at:
+  - Completion
+  - Bash functions
+- Add:
+  - zsh
+- Mod
+  - tmux
+  - inputrc
+  - gconf?
+
+Trouble:
+
+- What is wrong with cygwin? Why so slow?
