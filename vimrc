@@ -317,7 +317,6 @@ let g:promptline_preset = {
         \'y'    : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tagbar shortcut
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
