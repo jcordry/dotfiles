@@ -331,3 +331,7 @@ nnoremap <leader>. :CtrlPTag<cr>
 let g:BASH_AuthorName = 'Julien Cordry'
 let g:BASH_Email      = 'jcordry@tees.ac.uk'
 let g:BASH_Company    = 'Teesside University'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set hightlight off on searches by default
+set nohls
