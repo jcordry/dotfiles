@@ -8,5 +8,5 @@ XTerm*scrollBar      : true
 XTerm*rightScrollBar : true
 XTerm*saveLines      : 10000
 XTerm*faceName       : Inconsolata for Powerline
-XTerm*faceSize       : 14
+XTerm*faceSize       : 16
 XTerm*toolBar        : off
