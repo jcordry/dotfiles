@@ -277,11 +277,11 @@ set showcmd     " display incomplete commands
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bubble up and down selected text
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+nmap <C-k> [e
+nmap <C-j> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+vmap <C-k> [egv
+vmap <C-j> ]egv
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
@@ -327,7 +327,7 @@ nnoremap <leader>. :CtrlPTag<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Bash support
+" Bash support - does not seem to work :(
 let g:BASH_AuthorName = 'Julien Cordry'
 let g:BASH_Email      = 'jcordry@tees.ac.uk'
 let g:BASH_Company    = 'Teesside University'
