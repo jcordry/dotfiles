@@ -1,3 +1,7 @@
+Bugs:
+
+- mksyslink does not take into account the files for man
+
 To be added:
 
 - Look at:
