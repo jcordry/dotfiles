@@ -9,3 +9,6 @@ elif [[ $OSTYPE == gnu-linux ]]; then # home and labs linux
     export PATH=/usr/local/bin:$PATH
 fi
 
+if [[ $HOSTNAME == linux2* ]]; then
+    export PATH=/usr/local/eclipse/:$PATH
+fi
