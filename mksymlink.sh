@@ -27,8 +27,11 @@ done
 cd -
 
 if [[ ! -d $HOME/bin ]]; then
-    mkdir $HOME/bin
-    chmod 755 $HOME/bin
+    mkdir -p $HOME/bin
+fi
+
+if [[ ! -d $HOME/man/man1 ]]; then
+    mkdir -p $HOME/man/man1
 fi
 
 cd ~/bin
