@@ -42,3 +42,14 @@ for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     fi
 done
 cd -
+
+for DIR in $HOME/man/*; do
+    cd $DIR
+    for file in $CONFIGDIR/$NEWFOLDER/man/`basename $DIR`/*; do
+        linkfile=`basename $file`
+        if [[ ! -f $linkfile ]]; then
+            ln -s $file $linkfile
+        fi
+    done
+    cd -
+done
