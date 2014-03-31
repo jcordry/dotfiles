@@ -31,6 +31,7 @@ set backspace=indent,eol,start
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("vms")
   set nobackup      " do not keep a backup file, use versions instead
+  set nowritebackup
 else
   set backup        " keep a backup file
 endif
@@ -247,7 +248,6 @@ let g:airline#extensions#tabline#enabled = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " no automatic backup
 set nobackup
-set nowritebackup
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ConqueShell <C-w> works!
