@@ -246,10 +246,6 @@ let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_alt_sep = '>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" no automatic backup
-set nobackup
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ConqueShell <C-w> works!
 let g:ConqueTerm_CWInsert = 1
 let g:ConqueTerm_InsertOnEnter = 1
