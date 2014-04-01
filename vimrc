@@ -29,12 +29,13 @@ set nocompatible
 set backspace=indent,eol,start
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("vms")
-  set nobackup      " do not keep a backup file, use versions instead
-  set nowritebackup
-else
-  set backup        " keep a backup file
-endif
+" if has("vms")         " What do we need that for?
+"   set nobackup        " do not keep a backup file, use versions instead
+"   set nowritebackup
+" else
+set nobackup        " keep a backup file
+set nowritebackup
+" endif
 set history=50      " keep 50 lines of command line history
 set ruler       " show the cursor position all the time
 set incsearch       " do incremental searching
