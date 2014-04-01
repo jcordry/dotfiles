@@ -331,3 +331,8 @@ let g:BASH_Company    = 'Teesside University'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set hightlight off on searches by default
 set nohls
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Let's try to make vim work with C++11
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
