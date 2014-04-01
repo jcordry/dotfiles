@@ -334,5 +334,5 @@ set nohls
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Let's try to make vim work with C++11
+" Syntastic now supports c++11
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
