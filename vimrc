@@ -321,6 +321,9 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 " Tagbar shortcut
 nnoremap <leader>. :CtrlPTag<cr>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree shortcut
+nnoremap <leader>, :NERDTree<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bash support - does not seem to work :(
