@@ -29,10 +29,6 @@ set nocompatible
 set backspace=indent,eol,start
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" if has("vms")         " What do we need that for?
-"   set nobackup        " do not keep a backup file, use versions instead
-"   set nowritebackup
-" else
 set nobackup        " keep a backup file
 set nowritebackup
 " endif
