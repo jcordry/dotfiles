@@ -105,6 +105,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tristen/vim-sparkup.git'
 Bundle 'vim-scripts/taglist'
+Bundle 'majutsushi/tagbar'
 " Bundle 'vim-scripts/Conque-Shell' ?
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
