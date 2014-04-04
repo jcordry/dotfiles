@@ -255,6 +255,12 @@ set listchars=tab:▸\ ,eol:¬,trail:-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colorscheme
 colorscheme molokai
+" set background=dark
+" let g:solarized_termtrans=1
+" let g:solarized_termcolors=256
+" let g:solarized_contrast="high"
+" let g:solarized_visibility="high"
+" colorscheme solarized
 
 " colourscheme modes
 " this sould be for the colourscheme file; this is
