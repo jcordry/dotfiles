@@ -12,7 +12,7 @@ To be added:
 - Mod
   - tmux
   - inputrc
-  - gconf?
+  - gconf? <- problems with portability
 
 Trouble:
 
