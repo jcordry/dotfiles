@@ -311,10 +311,11 @@ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Adjustments to the promptline
+" \'y'    : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
 let g:promptline_preset = {
         \'a'    : [ promptline#slices#host() ],
         \'c'    : [ promptline#slices#cwd() ],
-        \'y'    : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
+        \'y'    : [ promptline#slices#vcs_branch() ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
