@@ -80,6 +80,7 @@ if [[ `uname` == Darwin ]]; then
     alias whotunes='lsof -r 2 -n -P -F n -c iTunes -a -i TCP@`hostname`:3689'
     # Brew
     alias bdr='brew doctor'
+    alias bcl='brew cleanup'
     alias bin='brew install'
     alias binf='brew info'
     alias bls='brew list'
