@@ -42,12 +42,10 @@ mymkdir $HOME/bin
 
 mymkdir $HOME/man/man1
 
-cd ~/bin
 for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     linkfile=`basename $file`
-    mklink $linkfile $file
+    mklink $HOME/bin/$linkfile $file
 done
-cd -
 
 for DIR in $HOME/man/*; do
     cd $DIR
