@@ -26,20 +26,26 @@ for file in $FILE_LIST; do
 done
 cd -
 
-if [[ ! -d $HOME/bin ]]; then
-    mkdir -p $HOME/bin
-fi
+mymkdir() {
+    if [[ ! -d $1 ]]; then
+        mkdir -p $1
+    fi
+}
 
-if [[ ! -d $HOME/man/man1 ]]; then
-    mkdir -p $HOME/man/man1
-fi
+mklink() {
+    if [[ ! -f $1 ]]; then
+        ln -s $2 $1
+    fi
+}
+
+mymkdir $HOME/bin
+
+mymkdir $HOME/man/man1
 
 cd ~/bin
 for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     linkfile=`basename $file`
-    if [[ ! -f $linkfile ]]; then
-        ln -s $file $linkfile
-    fi
+    mklink $linkfile $file
 done
 cd -
 
@@ -47,9 +53,7 @@ for DIR in $HOME/man/*; do
     cd $DIR
     for file in $CONFIGDIR/$NEWFOLDER/man/`basename $DIR`/*; do
         linkfile=`basename $file`
-        if [[ ! -f $linkfile ]]; then
-            ln -s $file $linkfile
-        fi
+        mklink $linkfile $file
     done
     cd -
 done
