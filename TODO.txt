@@ -1,6 +1,6 @@
 Bugs:
 
-- mksyslink does not take into account the files for man
+- mksyslink does not take into account the files for man - Only badly
 
 To be added:
 
