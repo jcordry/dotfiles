@@ -33,8 +33,8 @@ mymkdir() {
 }
 
 mklink() {
-    if [[ ! -f $1 ]]; then
-        ln -s $2 $1
+    if [[ ! -f $2 ]]; then
+        ln -s $1 $2
     fi
 }
 
@@ -44,14 +44,14 @@ mymkdir $HOME/man/man1
 
 for file in $CONFIGDIR/$NEWFOLDER/bin/*; do
     linkfile=`basename $file`
-    mklink $HOME/bin/$linkfile $file
+    mklink $file $HOME/bin/$linkfile
 done
 
 for DIR in $HOME/man/*; do
     cd $DIR
     for file in $CONFIGDIR/$NEWFOLDER/man/`basename $DIR`/*; do
         linkfile=`basename $file`
-        mklink $linkfile $file
+        mklink $file $linkfile
     done
     cd -
 done
