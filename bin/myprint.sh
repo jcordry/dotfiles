@@ -2,7 +2,7 @@
 
 MYPRINTHOST=linux21.scm.tees.ac.uk
 
-if [[ ! $* -eq 1 ]]; then
+if [[ ! $# -eq 1 ]]; then
     echo "Usage $0 file_to_print"
     exit 0
 fi
