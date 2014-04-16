@@ -38,6 +38,7 @@ alias l1='ls -1'
 if [[ `hostname` == SCM-88053 ]]; then
     alias unrar='/cygdrive/D/Program\ Files\ \(x86\)/Unrar/UnRAR.exe'
     alias xterm='xterm -fg white -bg black'
+    alias wtc='wintocyg.sh'
 fi
 
 if [[ `hostname` == SCM-88364.local ]]; then
