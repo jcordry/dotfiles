@@ -21,11 +21,7 @@ set -o nounset                              # Treat unset variables as an error
 
 path=`echo $1 | tr '\' '/'`
 
-echo "$path"
-
 letter=`echo $path | sed -e 's/:\/.*//g'` # Should be the first letter!
-
-echo letter $letter
 
 if [[ "$letter" != "" ]]; then
     path=`echo $path | sed -e 's/^.:\///'`
