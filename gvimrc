@@ -22,9 +22,7 @@
 " set the X11 font to use
 " set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
 let os = substitute(system('uname'), "\n", "", "")
-if os ==? "CYGWIN_NT-6.1"
-    set guifont=Inconsolata\ for\ Powerline\ 14
-elseif os ==? "Linux"
+if os ==? "CYGWIN_NT-6.1" || os ==? "Linux"
     set guifont=Inconsolata\ for\ Powerline\ 14
 else
     set guifont=MonacoForPowerline:h24
