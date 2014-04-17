@@ -331,7 +331,7 @@ nnoremap <leader>. :CtrlPTag<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree shortcut
-nnoremap <leader>, :NERDTree<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bash support - does not seem to work :(
