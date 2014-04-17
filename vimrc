@@ -253,13 +253,13 @@ set listchars=tab:▸\ ,eol:¬,trail:-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colorscheme
-colorscheme molokai
-" set background=dark
-" let g:solarized_termtrans=1
-" let g:solarized_termcolors=256
-" let g:solarized_contrast="high"
-" let g:solarized_visibility="high"
-" colorscheme solarized
+" colorscheme molokai
+set background=light
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
 
 " colourscheme modes
 " this sould be for the colourscheme file; this is
@@ -362,3 +362,9 @@ nnoremap <leader>p :Git push<cr>
 " Copy line to buffer
 " nnoremap <C-c> "*yy
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Buffer shortcuts:
+" Go to next buffer
+nnoremap <leader>/ :bn<cr>
+" Drop current buffer
+nnoremap <leader>m :bd<cr>
