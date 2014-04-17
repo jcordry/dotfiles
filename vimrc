@@ -201,7 +201,6 @@ vno <right> <Nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
-" let g:Powerline_symbols = 'fancy'
 set number
 set laststatus=2
 set t_Co=256
