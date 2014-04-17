@@ -21,10 +21,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set the X11 font to use
 " set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
-if $OSTYPE == "cygwin"
-    set guifont=MonacoForPowerline:h24
-else
+if has("win32") || has("win16")
     set guifont=Inconsolata\ for\ Powerline\ 14
+else
+    set guifont=MonacoForPowerline:h24
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
