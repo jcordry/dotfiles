@@ -91,3 +91,6 @@
 [submodule "vim/bundle/bash-support"]
 	path = vim/bundle/bash-support
 	url = https://github.com/vim-scripts/bash-support.vim.git
+[submodule "vim/bundle/abolish"]
+	path = vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
