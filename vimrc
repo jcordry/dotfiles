@@ -331,6 +331,10 @@ nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive shortcut
+nnoremap <leader>g :Gstatus<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bash support - does not seem to work :(
 let g:BASH_AuthorName = 'Julien Cordry'
 let g:BASH_Email      = 'jcordry@tees.ac.uk'
