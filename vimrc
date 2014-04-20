@@ -347,6 +347,10 @@ nnoremap <leader>9 9gt
 nnoremap <leader>g :Gstatus<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Push shortcut
+nnoremap <leader>p :Git push<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bash support - does not seem to work :(
 let g:BASH_AuthorName = 'Julien Cordry'
 let g:BASH_Email      = 'jcordry@tees.ac.uk'
@@ -366,10 +370,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Push shortcut
-nnoremap <leader>p :Git push<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy line to buffer
