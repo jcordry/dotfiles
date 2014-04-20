@@ -182,7 +182,11 @@ elif [[ $HOSTNAME == SCM-88364.local ]]; then # TODO CHANGE THIS FOR THE OFFICE 
     export VIMERL_MANPATH=/usr/local/lib/erlang/man
 fi
 
+
+################################################################################
+# Mutt
+export MAILCONF=$HOME/.mutt
+
 ################################################################################
 # LD_LIB
-#
 export LD_LIBRARY_PATH=/usr/gnat/lib:/lib:/usr/lib:/home/scm-staff/u0026939/lib/:~/lib/
