@@ -13,6 +13,7 @@ mutt, input). This now includes:
 - OSX config files from Mathias Bynens.
 - Git config files.
 - Some configuration files for CygwinX.
+- Some mutt files
 
 I have tried to emulate some functions from bash-it for completion, aliases...
 
