@@ -56,8 +56,15 @@ unset confirmappend                                     # don't ask
 set reverse_alias
 unset sort_re
 set tilde
+set folder = $HOME/Mail
+set menu_scroll
+set pager_context     = 5
+set pager_index_lines = 10
+set pager_stop
+set pipe_decode
 
 set mbox_type=Maildir
 set signature=$MAILCONF/signature
 set beep_new
 
+source $MAILCONF/bindings
