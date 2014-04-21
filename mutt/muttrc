@@ -5,8 +5,8 @@ source $MAILCONF/ymail.conf
 
 ################################################################################
 # Editor
-# set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
-set editor='vim'
+set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+# set editor='vim'
 
 ################################################################################
 # Necessary?
