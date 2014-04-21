@@ -4,7 +4,6 @@ bind index gg first-entry
 bind index G  last-entry
 bind index N  search-opposite
 # bind pager q  toggle-quoted
-# bind pager q  exit
 bind pager /  search
 # bind pager j  next-line
 # bind pager k  previous-line
