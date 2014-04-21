@@ -23,7 +23,6 @@ source $MAILCONF/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
 set smart_wrap = yes
 set sort       = 'threads'
 set sort_aux   = 'reverse-last-date-received'
-set imap_check_subscribed
 # Reorder the emails by fields
 ignore *
 unignore from: to: cc: date: subject:
@@ -40,7 +39,8 @@ set mailcap_path = $MAILCONF/mailcap
 
 ################################################################################
 # sidebar
-source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
+# source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
+source $MAILCONF/sidebar.muttrc
 
 set askcc                                               # ask for CC:
 set attribution       = "On %d, %n wrote:"              # set attribution
@@ -62,6 +62,11 @@ set pager_context     = 5
 set pager_index_lines = 10
 set pager_stop
 set pipe_decode
+
+set imap_check_subscribed   = yes
+set imap_idle               = yes
+set imap_list_subscribed    = yes
+set ssl_force_tls           = yes
 
 set mbox_type=Maildir
 set signature=$MAILCONF/signature
