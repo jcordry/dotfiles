@@ -37,11 +37,6 @@ auto_view text/html                                      # view html automatical
 alternative_order text/plain text/enriched text/html     # save html for last
 set mailcap_path = $MAILCONF/mailcap
 
-################################################################################
-# sidebar
-# source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
-source $MAILCONF/sidebar.muttrc
-
 set askcc                                               # ask for CC:
 set attribution       = "On %d, %n wrote:"              # set attribution
 set edit_headers                                        # show headers when composing
@@ -72,4 +67,8 @@ set mbox_type=Maildir
 set signature=$MAILCONF/signature
 set beep_new
 
+################################################################################
+# sidebar
+# source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
+source $MAILCONF/sidebar.muttrc
 source $MAILCONF/bindings
