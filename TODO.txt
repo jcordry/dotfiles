@@ -1,6 +1,7 @@
 Bugs:
 
 - mksyslink does not take into account the files for man - Only badly
+- There is no distinction between the accounts in mutt
 
 To be added:
 
