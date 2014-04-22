@@ -21,3 +21,4 @@ Thumbs.db
 
 mutt/cache/headers
 mutt/ymail.conf
+mutt/cache/bodies/*
