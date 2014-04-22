@@ -3,6 +3,7 @@ bind index i  noop
 bind index gg first-entry
 bind index G  last-entry
 bind index N  search-opposite
+bind index f  imap-fetch-mail
 # bind pager q  toggle-quoted
 bind pager ,  toggle-quoted
 bind pager /  search
