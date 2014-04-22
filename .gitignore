@@ -23,4 +23,4 @@ Thumbs.db
 mutt/cache/headers
 mutt/ymail.conf
 mutt/cache/bodies/*
-mutt/alias # Do not share the emails publicly
+mutt/alias
