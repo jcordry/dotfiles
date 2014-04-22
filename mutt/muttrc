@@ -71,3 +71,4 @@ set beep_new
 # sidebar
 source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
 source $MAILCONF/bindings
+source $MAILCONF/macros

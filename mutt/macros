@@ -1,0 +1,5 @@
+# vim: ft=muttrc
+
+macro generic "<esc>1" ":set from=j.cordry@tees.ac.uk"
+macro generic "<esc>2" ":set from=julien.cordry@gmail.com"
+macro generic "<esc>3" ":set from=jcordry@ymail.com"
