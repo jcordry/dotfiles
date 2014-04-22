@@ -24,3 +24,4 @@ mutt/cache/headers
 mutt/ymail.conf
 mutt/cache/bodies/*
 mutt/alias
+mutt/certificates
