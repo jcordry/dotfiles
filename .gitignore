@@ -19,6 +19,7 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# Mutt
 mutt/cache/headers
 mutt/ymail.conf
 mutt/cache/bodies/*
