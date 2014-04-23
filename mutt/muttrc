@@ -1,8 +1,6 @@
 # My mutt configutation
 #
 
-source $MAILCONF/ymail.conf
-
 ################################################################################
 # Editor
 set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
@@ -67,8 +65,22 @@ set mbox_type=Maildir
 set signature=$MAILCONF/signature
 set beep_new
 
+set realname      = "Julien Cordry"
+unset ssl_starttls
+
 ################################################################################
 # sidebar
 source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
 source $MAILCONF/bindings
 source $MAILCONF/macros
+
+source $MAILCONF/gmail.conf
+folder-hook $folder 'source $MAILCONF/gmail.conf'
+
+source $MAILCONF/ymail.conf
+folder-hook $folder 'source $MAILCONF/ymail.conf'
+
+## Shortcuts
+macro index,pager ,g '<sync-mailbox><enter-command>source $MAILCONF/gmail.conf<enter><change-folder>!<enter>'
+macro index,pager ,y '<sync-mailbox><enter-command>source $MAILCONF/ymail.conf<enter><change-folder>!<enter>'
+
