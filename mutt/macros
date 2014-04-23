@@ -1,8 +1,8 @@
 # vim: ft=muttrc
 
-macro generic ",1" ":set from=j.cordry@tees.ac.uk<enter>"
-macro generic ",2" ":set from=julien.cordry@gmail.com<enter>"
-macro generic ",3" ":set from=jcordry@ymail.com<enter>"
+macro generic ",1" ":set from=j.cordry@tees.ac.uk"
+macro generic ",2" ":set from=julien.cordry@gmail.com"
+macro generic ",3" ":set from=jcordry@ymail.com"
 
 ## Shortcuts
 macro index,pager ,g '<sync-mailbox><enter-command>source $MAILCONF/gmail.conf<enter><change-folder>!<enter>'
