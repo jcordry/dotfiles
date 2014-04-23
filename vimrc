@@ -170,6 +170,9 @@ if (has("autocmd"))
     autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
     autocmd FileType plaintex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 
+    " mail though mutt
+    autocmd FileType mail setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=taw
+
     " Text turn on spell automatically + smaller tab + wrap around
     autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 
