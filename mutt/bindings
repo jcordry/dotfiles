@@ -1,5 +1,7 @@
 # vim: ft=muttrc
 bind index i  noop
+bind index <return> display-message
+bind index ^J sidebar-next
 bind index gg first-entry
 bind index G  last-entry
 bind index N  search-opposite
