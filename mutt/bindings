@@ -15,3 +15,5 @@ bind index,pager \& noop
 bind index,pager R  group-reply
 bind index <return> display-message
 bind index,pager ^J sidebar-next
+bind pager gg first-entry
+bind pager G  last-entry

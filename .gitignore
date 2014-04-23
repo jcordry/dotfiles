@@ -24,3 +24,4 @@ mutt/cache/headers
 mutt/cache/bodies/*
 mutt/alias
 mutt/certificates
+mutt/tmp/mutt-*
