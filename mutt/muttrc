@@ -79,8 +79,3 @@ folder-hook $folder 'source $MAILCONF/ymail.conf'
 
 source $MAILCONF/gmail.conf
 folder-hook $folder 'source $MAILCONF/gmail.conf'
-
-## Shortcuts
-macro index,pager ,g '<sync-mailbox><enter-command>source $MAILCONF/gmail.conf<enter><change-folder>!<enter>'
-macro index,pager ,y '<sync-mailbox><enter-command>source $MAILCONF/ymail.conf<enter><change-folder>!<enter>'
-
