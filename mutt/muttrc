@@ -23,8 +23,8 @@ set sort       = 'threads'
 set sort_aux   = 'reverse-last-date-received'
 # Reorder the emails by fields
 ignore *
-unignore from: to: cc: date: subject:
-hdr_order from: to: cc: date: subject:
+unignore    from:   to:   cc:   date:   subject:
+hdr_order   from:   to:   cc:   date:   subject:
 #
 set timeout    = 60 #Check for mail every minute
 set mail_check = 5
