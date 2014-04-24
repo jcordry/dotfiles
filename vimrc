@@ -356,7 +356,7 @@ nnoremap <leader>p :Git push<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bash support - does not seem to work :(
 let g:BASH_AuthorName = 'Julien Cordry'
-let g:BASH_Email      = 'jcordry@tees.ac.uk'
+let g:BASH_Email      = 'j.cordry@tees.ac.uk'
 let g:BASH_Company    = 'Teesside University'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
