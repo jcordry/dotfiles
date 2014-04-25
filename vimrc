@@ -376,7 +376,9 @@ map <C-l> <C-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy line to buffer
-" nnoremap <C-c> "*yy
+nmap <C-c> "*yy
+" format paragraph
+nmap <leader>f vipgq
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
