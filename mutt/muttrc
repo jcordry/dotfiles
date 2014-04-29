@@ -63,7 +63,7 @@ set ssl_force_tls           = yes
 
 set mbox_type=Maildir
 set signature=$MAILCONF/signature
-set beep_new
+# set beep_new
 
 set realname      = "Julien Cordry"
 unset ssl_starttls
