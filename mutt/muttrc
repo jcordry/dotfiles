@@ -73,7 +73,7 @@ unset ssl_starttls
 source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
 source $MAILCONF/bindings
 source $MAILCONF/macros
-source $MAILCONF/alias
+source `if [[ -e $MAILCONF/alias ]]; then $MAILCONF/alias else /dev/null; fi`
 
 source $MAILCONF/ymail.conf
 folder-hook $folder 'source $MAILCONF/ymail.conf'
