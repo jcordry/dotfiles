@@ -322,6 +322,7 @@ let g:promptline_preset = {
         \'c'    : [ promptline#slices#cwd() ],
         \'y'    : [ promptline#slices#vcs_branch() ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
+let g:promptline_theme = 'airline'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tagbar shortcut
