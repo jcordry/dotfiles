@@ -377,13 +377,17 @@ map <C-l> <C-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copy line to buffer
-nmap <C-c> "*yy
+" nmap <C-c> "*yy
 " format paragraph
-nmap <leader>f vipgq
+nmap <leader>p vipgq
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
 " Go to next buffer
 nnoremap <leader>/ :bn<cr>
 " Drop current buffer
-nnoremap <leader>m :bd<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shortcut for spelling in French/English
+nnoremap <leader>f :set spelllang=fr spell<cr>
+nnoremap <leader>e :set spelllang=en_gb spell<cr>
