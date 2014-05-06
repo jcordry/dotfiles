@@ -379,7 +379,7 @@ map <C-l> <C-w>l
 " Copy line to buffer
 " nmap <C-c> "*yy
 " format paragraph
-nmap <leader>p vipgq
+nmap <leader>r vipgq
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
