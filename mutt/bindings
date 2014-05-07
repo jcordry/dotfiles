@@ -14,6 +14,6 @@ bind index,pager \# noop
 bind index,pager \& noop
 bind index,pager R  group-reply
 bind index <return> display-message
-bind index,pager ^J sidebar-next
+# bind index,pager ^J sidebar-next
 bind pager gg top
 bind pager G  bottom
