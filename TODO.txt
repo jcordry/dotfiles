@@ -10,6 +10,7 @@ To be added:
   - Bash functions
 - Add:
   - zsh
+  - w3m
 - Mod
   - tmux
   - inputrc
