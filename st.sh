@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Meant to be run in the mac labs to set things to work
+
 ln -s ~/Desktop/Network-Home/dotfiles ~/dotfiles
 cd dotfiles
 ./mksymlink.sh
