@@ -379,12 +379,16 @@ map <C-l> <C-w>l
 " Copy line to buffer
 " nmap <C-c> "*yy
 " format paragraph
-nmap <leader>r vipgq
+nmap <leader>r gqip
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
 " Go to next buffer
 nnoremap <leader>/ :bn<cr>
+nnoremap <silent> [b :bp<cr>
+nnoremap <silent> [B :bfirst<cr>
+nnoremap <silent> ]b :bn<cr>
+nnoremap <silent> ]B :blast<cr>
 " Drop current buffer
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
