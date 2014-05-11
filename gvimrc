@@ -25,7 +25,7 @@ let os = substitute(system('uname'), "\n", "", "")
 if os ==? "CYGWIN_NT-6.1" || os ==? "Linux"
     set guifont=Inconsolata\ for\ Powerline\ 14
 else
-    set guifont=MonacoForPowerline:h24
+    set guifont=MonacoForPowerline:h20
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
