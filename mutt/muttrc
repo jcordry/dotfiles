@@ -67,7 +67,7 @@ set signature=$MAILCONF/signature
 
 set realname      = "Julien Cordry"
 unset ssl_starttls
-set from          = j.cordry@tee.ac.uk
+set from          = j.cordry@tees.ac.uk
 
 ################################################################################
 # sidebar
