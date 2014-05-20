@@ -384,7 +384,6 @@ nmap <leader>r gqip
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
 " Go to next buffer
-nnoremap <leader>/ :bn<cr>
 nnoremap <silent> [b :bp<cr>
 nnoremap <silent> [B :bfirst<cr>
 nnoremap <silent> ]b :bn<cr>
@@ -394,4 +393,4 @@ nnoremap <silent> ]B :blast<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcut for spelling in French/English
 nnoremap <leader>f :set spelllang=fr spell<cr>
-nnoremap <leader>e :set spelllang=en_gb spell<cr>
+nnoremap <leader>d :set spelllang=en_gb spell<cr>
