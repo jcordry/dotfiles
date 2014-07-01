@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MYPRINTHOST=linux21.scm.tees.ac.uk
+MYPRINTHOST=linux1.scm.tees.ac.uk
 
 if [[ ! $# -eq 1 ]]; then
     echo "Usage $0 file_to_print"
