@@ -50,9 +50,6 @@ fi
 # source $BASH_IT/bash_it.sh
 source $HOME/dotfiles/promptline.sh
 
-# Fasd
-eval "$(fasd --init bash-hook bash-ccomp bash-ccomp-install posix-alias)"
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -60,4 +57,7 @@ if [ -n "$BASH_VERSION" ]; then
         source "$HOME/.bashrc"
     fi
 fi
+
+# Fasd
+eval "$(fasd --init bash-hook bash-ccomp bash-ccomp-install posix-alias)"
 

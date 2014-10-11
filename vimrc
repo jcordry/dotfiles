@@ -252,7 +252,7 @@ let g:ConqueTerm_InsertOnEnter = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Have nice looking "invisible characters"
-set listchars=tab:▸\ ,eol:¬,trail:-
+" set listchars=tab:▸\ ,eol:¬,trail:-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colorscheme
