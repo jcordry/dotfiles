@@ -20,4 +20,4 @@
 set -o nounset                              # Treat unset variables as an error
 
 brew install bash bash-completion vim git tmux fasd wget w3m lftp
-brew install cask svn erlang rebar colordiff coreutils ack unrar htop
+brew install cask svn erlang rebar colordiff coreutils ack unrar htop mutt
