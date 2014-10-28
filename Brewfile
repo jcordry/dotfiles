@@ -46,9 +46,9 @@ install tree
 install zopfli
 install p7zip
 
-install homebrew/versions/lua52
+# install homebrew/versions/lua52
 
-# 
+#
 install cask
 install tmux
 install fasd
@@ -63,6 +63,8 @@ install the_silver_searcher
 install colordiff
 install erlang
 install rebar
+install ghostscript
+install a2ps
 
 # Remove outdated versions from the cellar
 cleanup
