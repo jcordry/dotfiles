@@ -1,8 +1,12 @@
+# To run:
+# brew tap homebrew/boneyard
+# brew bundle Brewfile
+
 # Make sure we’re using the latest Homebrew
 update
 
 # Upgrade any already-installed formulae
-# upgrade
+upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -48,7 +52,6 @@ install p7zip
 
 # install homebrew/versions/lua52
 
-#
 install cask
 install tmux
 install fasd
