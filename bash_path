@@ -6,7 +6,9 @@ if [[ $HOSTNAME == SCM-88053 ]]; then # CYGWIN homedesktop
 elif [[ $OSTYPE == darwin13 ]]; then # home and office macs
     export PATH=/usr/local/bin:$PATH
 elif [[ $OSTYPE == gnu-linux ]]; then # home and labs linux
-    export PATH=/usr/local/bin:$PATH
+    export PATH=/usr/local/bin:$HOME/.linuxbrew/bin:$PATH
+    export MANPATH=$HOME/man:$HOME/share/man:$HOME/.linuxbrew/share/man:$MANPATH
+    export INFOPATH=:$HOME/share/info:$HOME/.linuxbrew/share/info:$INFOPATH
 fi
 
 if [[ $HOSTNAME == linux2* ]]; then
