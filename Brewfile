@@ -68,6 +68,7 @@ install erlang
 install rebar
 install ghostscript
 install a2ps
+install source-highlight
 
 # Remove outdated versions from the cellar
 cleanup
