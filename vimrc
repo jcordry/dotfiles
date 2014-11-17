@@ -396,3 +396,9 @@ nnoremap <silent> ]B :blast<cr>
 " Shortcut for spelling in French/English
 nnoremap <leader>f :set spelllang=fr spell<cr>
 nnoremap <leader>d :set spelllang=en_gb spell<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Merlin for Ocaml
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
