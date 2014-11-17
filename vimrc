@@ -184,8 +184,6 @@ if (has("autocmd"))
     autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
 endif
 
-au BufRead,BufNewFile *.ml *.mli compiler ocaml
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mapleader
 let mapleader=","
