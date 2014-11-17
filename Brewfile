@@ -54,13 +54,11 @@ install p7zip
 
 install cask
 install tmux
-install fasd
 install bash-completion
 install lftp
 install wget
 install w3m
 install unrar
-install htop
 install mutt
 install the_silver_searcher
 install colordiff
@@ -68,7 +66,11 @@ install erlang
 install rebar
 install ghostscript
 install a2ps
+install ocaml
+install opam
 install source-highlight
+install fasd
+install htop
 
 # Remove outdated versions from the cellar
 cleanup
