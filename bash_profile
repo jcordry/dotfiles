@@ -61,3 +61,5 @@ fi
 # Fasd
 eval "$(fasd --init bash-hook bash-ccomp bash-ccomp-install posix-alias)"
 
+# OPAM configuration
+. $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
