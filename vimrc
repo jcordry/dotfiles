@@ -381,7 +381,7 @@ map <C-l> <C-w>l
 " Copy line to buffer
 " nmap <C-c> "*yy
 " format paragraph
-nmap <leader>r gqip
+" nmap <leader>r gqip
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer shortcuts:
