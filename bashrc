@@ -193,5 +193,7 @@ export LD_LIBRARY_PATH=/usr/gnat/lib:/lib:/usr/lib:/home/scm-staff/u0026939/lib/
 
 ################################################################################
 # LESS
-export LESSOPEN="| `which src-hilite-lesspipe.sh` %s"
+if [[ $OSTYPE == darwin* ]]; then
+    export LESSOPEN="| `which src-hilite-lesspipe.sh` %s"
+fi
 export LESS=' -R '
