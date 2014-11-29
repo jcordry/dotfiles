@@ -151,7 +151,7 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ 
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
               \ | wincmd p | diffthis
 endif
 
