@@ -19,6 +19,13 @@ if v:progname =~? "evim"
   finish
 endif
 
+" set wrap
+set linebreak
+set showbreak=>\ 
+set scrolloff=2
+set wildmenu
+set cursorline
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -400,3 +407,4 @@ nnoremap <leader>d :set spelllang=en_gb spell<cr>
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
+let g:syntastic_ocaml_checkers = ['merlin']
