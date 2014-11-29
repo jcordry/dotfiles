@@ -111,10 +111,11 @@ Bundle 'vim-scripts/taglist'
 Bundle 'majutsushi/tagbar'
 " Bundle 'vim-scripts/Conque-Shell' ?
 
+
+set textwidth=78
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -150,7 +151,7 @@ endif " has("autocmd")
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ 
               \ | wincmd p | diffthis
 endif
 
@@ -174,21 +175,24 @@ set expandtab
 " use 2 spaces as tab
 if (has("autocmd"))
     " TeX/LaTeX turn on spell automatically + smaller tab + wrap around
-    autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
-    autocmd FileType plaintex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType tex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
+    autocmd FileType plaintex setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
 
     " mail though mutt
-    autocmd FileType mail setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=taw
+    autocmd FileType mail setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=taw
 
     " Text turn on spell automatically + smaller tab + wrap around
-    autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
 
     " Markdown turn on spell automatically + smaller tab + wrap around
-    autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=4 shiftwidth=4 softtabstop=4 fo+=t
+    autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
 
     " HTML turn on spell automatically + smaller tab + wrap around
-    autocmd FileType html setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
-    autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 fo+=t
+    autocmd FileType html setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
+    autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
+
+    " Ocaml turn off wrap around textwidth
+    autocmd FileType ocaml setlocal formatoptions-=t
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
