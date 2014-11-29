@@ -199,19 +199,23 @@ endif
 " mapleader
 let mapleader=","
 
+" move over wraped lines
+noremap j gj
+noremap k gk
+
 " unmap the arrow keys
-no <down> <Nop>
-no <up> <Nop>
-no <left> <Nop>
-no <right> <Nop>
-ino <down> <Nop>
-ino <up> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
-vno <down> <Nop>
-vno <up> <Nop>
-vno <left> <Nop>
-vno <right> <Nop>
+noremap <down> <Nop>
+noremap <up> <Nop>
+noremap <left> <Nop>
+noremap <right> <Nop>
+inoremap <down> <Nop>
+inoremap <up> <Nop>
+inoremap <left> <Nop>
+inoremap <right> <Nop>
+vnoremap <down> <Nop>
+vnoremap <up> <Nop>
+vnoremap <left> <Nop>
+vnoremap <right> <Nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
