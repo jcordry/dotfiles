@@ -284,19 +284,19 @@ set showcmd     " display incomplete commands
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Reload the vimrc
-:nmap <Leader>s :source $MYVIMRC<CR>
+:noremap <Leader>s :source $MYVIMRC<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bubble up and down selected text
 " Bubble single lines
-nmap <C-k> [e
-nmap <C-j> ]e
+noremap <C-k> [e
+noremap <C-j> ]e
 " Bubble multiple lines
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
 " Visually select the text that was last edited/pasted
-nmap gV `[v`]
+noremap gV `[v`]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LaTeX
