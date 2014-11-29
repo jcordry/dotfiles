@@ -19,12 +19,12 @@ if v:progname =~? "evim"
   finish
 endif
 
-" set wrap
-set linebreak
-set showbreak=>\ 
-set scrolloff=2
-set wildmenu
-set cursorline
+" set wrap       " no need to do that: should be set by default
+set linebreak    " wrap won't break words
+set showbreak=>\ " wraps with '> ' on the next line
+set scrolloff=2  " default 2 lines scrolloff
+set wildmenu     " helpmenu when pressing tab in commands
+set cursorline   " show active line
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use Vim settings, rather than Vi settings (much better!).
