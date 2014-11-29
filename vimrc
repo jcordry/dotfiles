@@ -113,11 +113,6 @@ Bundle 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Only do this part when compiled with support for autocommands.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" wraparound when writing some text
-" not entirely necessary. Just in some cases
-set textwidth=80
-
 if has("autocmd")
 
   " Enable file type detection.
