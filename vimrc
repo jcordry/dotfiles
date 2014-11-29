@@ -36,12 +36,12 @@ set nocompatible
 set backspace=indent,eol,start
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nobackup        " keep a backup file
+set nobackup      " don't keep a backup file
 set nowritebackup
 " endif
-set history=50      " keep 50 lines of command line history
-set ruler       " show the cursor position all the time
-set incsearch       " do incremental searching
+set history=50    " keep 50 lines of command line history
+set ruler         " show the cursor position all the time
+set incsearch     " do incremental searching
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -113,6 +113,11 @@ Bundle 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Only do this part when compiled with support for autocommands.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" wraparound when writing some text
+" not entirely necessary. Just in some cases
+set textwidth=80
+
 if has("autocmd")
 
   " Enable file type detection.
@@ -239,11 +244,6 @@ endif
 " Allow W to be used as w (Q as q)
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" wraparound when writing some text
-" not entirely necessary. Just in some cases
-set textwidth=80
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline fonts?
