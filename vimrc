@@ -200,10 +200,8 @@ endif
 let mapleader=","
 
 " move over wraped lines
-inoremap j gj
-inoremap k gk
-vnoremap j gj
-vnoremap k gk
+noremap j gj
+noremap k gk
 
 " unmap the arrow keys
 noremap <down> <Nop>
