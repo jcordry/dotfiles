@@ -372,7 +372,8 @@ let g:BASH_Company    = 'Teesside University'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set hightlight off on searches by default
-set nohls
+set nohlsearch
+set incsearch
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic now supports c++11
