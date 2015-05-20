@@ -55,7 +55,7 @@ if [[ `uname` = Linux ]]; then
 fi
 
 if [[ `uname` == Darwin ]]; then
-    alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+    alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
     alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
     alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
     alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
@@ -88,7 +88,7 @@ if [[ `uname` == Darwin ]]; then
     alias bout='brew outdated'
     alias brm='brew uninstall'
     alias bsr='brew search'
-    alias bup='brew update && brew upgrade'
+    alias bup='brew update && brew upgrade --all'
 fi
 
 if [[ `hostname` == vlad ]]; then
