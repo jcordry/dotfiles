@@ -196,9 +196,9 @@ endif
 " mapleader
 let mapleader=","
 
-" move over wraped lines
-noremap j gj
-noremap k gk
+" " move over wraped lines
+" noremap j gj
+" noremap k gk
 
 " unmap the arrow keys
 noremap <down> <Nop>
