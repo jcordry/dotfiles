@@ -97,9 +97,6 @@
 [submodule "mutt/mutt-colors-solarized"]
 	path = mutt/mutt-colors-solarized
 	url = https://github.com/altercation/mutt-colors-solarized.git
-[submodule "vim/bundle/omnisharp"]
-	path = vim/bundle/omnisharp
-	url = https://github.com/nosami/Omnisharp.git
 [submodule "vim/bundle/autocorrect"]
 	path = vim/bundle/autocorrect
 	url = https://github.com/panozzaj/vim-autocorrect.git
