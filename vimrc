@@ -194,7 +194,7 @@ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " mapleader
-let mapleader=","
+let mapleader="\<Space>"
 
 " " move over wraped lines
 " noremap j gj
