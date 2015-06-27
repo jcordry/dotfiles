@@ -200,6 +200,9 @@ let mapleader="\<Space>"
 " noremap j gj
 " noremap k gk
 
+" New shortcuts
+nnoremap <Leader>w :w<CR> " Save
+
 " unmap the arrow keys
 noremap <down> <Nop>
 noremap <up> <Nop>
