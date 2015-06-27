@@ -183,6 +183,7 @@ if (has("autocmd"))
 
     " Text turn on spell automatically + smaller tab + wrap around
     autocmd FileType text setlocal spell spelllang=en_gb tabstop=2 shiftwidth=2 softtabstop=2 formatoptions+=t
+    autocmd filetype text call AutoCorrect()
 
     " Markdown turn on spell automatically + smaller tab + wrap around
     autocmd FileType markdown setlocal spell spelllang=en_gb tabstop=4 shiftwidth=4 softtabstop=4 formatoptions+=t
