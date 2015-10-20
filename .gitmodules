@@ -109,3 +109,6 @@
 [submodule "vim/bundle/vim-erlang-tags"]
 	path = vim/bundle/vim-erlang-tags
 	url = git@github.com:vim-erlang/vim-erlang-tags.git
+[submodule "vim/bundle/erlang-motions.vim"]
+	path = vim/bundle/erlang-motions.vim
+	url = https://github.com/edkolev/erlang-motions.vim
