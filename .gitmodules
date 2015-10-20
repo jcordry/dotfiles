@@ -25,9 +25,6 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/vimerl"]
-	path = vim/bundle/vimerl
-	url = https://github.com/jimenezrick/vimerl.git
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -100,3 +97,15 @@
 [submodule "vim/bundle/autocorrect"]
 	path = vim/bundle/autocorrect
 	url = https://github.com/panozzaj/vim-autocorrect.git
+[submodule "vim/bundle/vim-erlang-runtime"]
+	path = vim/bundle/vim-erlang-runtime
+	url = git@github.com:vim-erlang/vim-erlang-runtime.git
+[submodule "vim/bundle/vim-erlang-compiler"]
+	path = vim/bundle/vim-erlang-compiler
+	url = git@github.com:vim-erlang/vim-erlang-compiler.git
+[submodule "vim/bundle/vim-erlang-omnicomplete"]
+	path = vim/bundle/vim-erlang-omnicomplete
+	url = git@github.com:vim-erlang/vim-erlang-omnicomplete.git
+[submodule "vim/bundle/vim-erlang-tags"]
+	path = vim/bundle/vim-erlang-tags
+	url = git@github.com:vim-erlang/vim-erlang-tags.git
