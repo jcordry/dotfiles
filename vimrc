@@ -225,17 +225,24 @@ set t_Co=256
 set term=screen-256color
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vimerl
-let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
-let g:erlangHighlightErrors=1
-if $VIMERL_COMPLETIONGREP
-    let g:erlangCompletionGrep='zgrep'
-    let g:erlangManSuffix='erl\.gz'
-endif
-if $VIMERL_HASMANPATH
-    let g:erlangManPath=$VIMERL_MANPATH
-    " let g:erlangManPath="~/lib/erlang/man/"
-endif
+" " Vimerl
+" let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
+" let g:erlangHighlightErrors=1
+" if $VIMERL_COMPLETIONGREP
+"     let g:erlangCompletionGrep='zgrep'
+"     let g:erlangManSuffix='erl\.gz'
+" endif
+" if $VIMERL_HASMANPATH
+"     let g:erlangManPath=$VIMERL_MANPATH
+"     " let g:erlangManPath="~/lib/erlang/man/"
+" endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Erlang modules
+set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
+set runtimepath^=~/.vim/bundle/vim-erlang-tags/
+
+
 
 " mouse mac! Not sure if necessary
 " if has("mouse")

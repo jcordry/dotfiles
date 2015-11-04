@@ -2,4 +2,4 @@
 SESSION=synergy
 IP=$1
 
-tmux -2 new-session -d -s $SESSION "/usr/bin/synergyc -f -l ~/synergy.log $IP"
+tmux -2 new-session -d -s $SESSION "/Applications/Synergy.app/Contents/MacOS/synergyc -f -l ~/synergy.log $IP"
