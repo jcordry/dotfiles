@@ -5,7 +5,7 @@ if [ -d .config ]; then
 fi
 
 ln -s $NETHOME/$USER nethome
-for dir in bin include .config .fonts dotfiles lib etc; do
+for dir in bin include .config .fonts dotfiles lib etc .emacsd; do
   ln -s $NETHOME/$USER/$dir $dir
 done
 cd $HOME/dotfiles
