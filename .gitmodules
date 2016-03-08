@@ -112,3 +112,9 @@
 [submodule "vim/bundle/erlang-motions.vim"]
 	path = vim/bundle/erlang-motions.vim
 	url = https://github.com/edkolev/erlang-motions.vim
+[submodule "vim/bundle/elixir"]
+	path = vim/bundle/elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vim/bundle/omnicppcomplete"]
+	path = vim/bundle/omnicppcomplete
+	url = https://github.com/vim-scripts/OmniCppComplete
