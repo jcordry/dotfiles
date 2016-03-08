@@ -46,7 +46,7 @@ if [[ `hostname` == SCM-88364.local ]]; then
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 fi
 
-if [[ `hostname` == scm-88587.local ]]; then
+if [[ `hostname` == MacBook-Pro.local ]]; then
     alias vlc='open -a VLC'
 fi
 
