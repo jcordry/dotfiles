@@ -1,83 +1,18 @@
-# My mutt configutation
-#
-
-################################################################################
-# Editor
-set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
-# set editor='vim'
-
-################################################################################
-# Necessary?
-set header_cache     = $MAILCONF/cache/headers
-set message_cachedir = $MAILCONF/cache/bodies
-set certificate_file = $MAILCONF/certificates
-set tmpdir           = $MAILCONF/tmp
-set alias_file       = $MAILCONF/alias
-
-################################################################################
-# Colouring
-source $MAILCONF/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
-
-set smart_wrap = yes
-set sort_aux = 'threads'
-set sort     = 'reverse-last-date-received'
-# Reorder the emails by fields
-ignore *
-unignore    from:   to:   cc:   date:   subject:
-hdr_order   from:   to:   cc:   date:   subject:
-#
-set timeout    = 60 #Check for mail every minute
-set mail_check = 5
-
-################################################################################
-# view html
-auto_view text/html                                      # view html automatically
-alternative_order text/plain text/enriched text/html     # save html for last
-set mailcap_path = $MAILCONF/mailcap
-
-# set askcc                                               # ask for CC:
-set attribution       = "On %d, %n wrote:"              # set attribution
-set edit_headers                                        # show headers when composing
-set fast_reply                                          # skip to compose when replying
-set forward_format    = "Fwd: %s"                       # format for subject when fwd'ing
-set forward_quote                                       # include message in forwards
-set include                                             # include message in replies
-set reply_to
-set reverse_name
-set delete                                              # don't ask
-unset confirmappend                                     # don't ask
-set reverse_alias
-unset sort_re
-set tilde
-set folder = $HOME/Mail
-set menu_scroll
-set pager_context     = 5
-set pager_index_lines = 10
-set pager_stop
-set pipe_decode
-
-set imap_check_subscribed   = yes
-set imap_idle               = yes
-set imap_list_subscribed    = yes
-set ssl_force_tls           = yes
-
-set mbox_type=Maildir
-set signature=$MAILCONF/signature
-# set beep_new
-
-set realname      = "Julien Cordry"
-unset ssl_starttls
-set from          = j.cordry@tees.ac.uk
-
-################################################################################
-# sidebar
-# source `FILE=$MAILCONF/sidebar.muttrc; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`
-source $MAILCONF/bindings
-source $MAILCONF/macros
-source `if [[ -f $MAILCONF/alias ]]; then echo $MAILCONF/alias; else echo /dev/null; fi`
-
-source $MAILCONF/ymail.conf
-folder-hook $folder 'source $MAILCONF/ymail.conf'
-
-source $MAILCONF/gmail.conf
-folder-hook $folder 'source $MAILCONF/gmail.conf'
+set ssl_starttls        = yes
+set ssl_force_tls       = yes
+set imap_user           = 'julien.cordry@gmail.com'
+set imap_pass           = 'paplggowzqkzthoe'
+set realname            = "Julien Cordry"
+set from                = "j.cordry@tees.ac.uk"
+set use_from            = yes
+# set from              = 'julien.cordry@gmail.com'
+set folder              = imaps://imap.gmail.com/
+set spoolfile           = imaps://imap.gmail.com/INBOX
+set postponed           = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set header_cache        = "~/.mutt/cache/headers"
+set message_cachedir    = "~/.mutt/cache/bodies"
+set certificate_file    = "~/.mutt/certificates"
+set smtp_url            = 'smtps://julien.cordry@gmail.com:paplggowzqkzthoe@smtp.gmail.com:465/'
+set move                = no
+set imap_keepalive      = 900
+set smtp_authenticators = 'gssapi:login'
