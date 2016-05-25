@@ -440,3 +440,8 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use local vimrc if there are any
+set exrc
+set secure
