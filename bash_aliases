@@ -88,7 +88,7 @@ if [[ `uname` == Darwin ]]; then
     alias bout='brew outdated'
     alias brm='brew uninstall'
     alias bsr='brew search'
-    alias bup='brew update && brew upgrade --all'
+    alias bup='brew update && brew upgrade'
 fi
 
 if [[ `hostname` == vlad ]]; then
