@@ -442,6 +442,6 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Needs a hex editor
-" Look up vim.wikia.com/wiki/Improved_hex_editing
-" In the meantime, use :%!xxd and :%!xxd -r
+" Use local vimrc if there are any
+set exrc
+set secure
