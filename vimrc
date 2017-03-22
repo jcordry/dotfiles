@@ -160,11 +160,11 @@ endif
 execute pathogen#infect()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" set tabs to 4 chars
+" set tabs to 2 chars
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Unless we are using LaTeX/TeX,HTML or CSS, in which case we could just
@@ -445,3 +445,8 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 " Use local vimrc if there are any
 set exrc
 set secure
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Elixir
+set omnifunc=syntaxcomplete#Complete
