@@ -134,3 +134,6 @@
   enabled = true
 [include]
   path = ~/.gitconfig.user
+[user]
+	email = julien.cordry@gmail.com
+	name = JCordry
