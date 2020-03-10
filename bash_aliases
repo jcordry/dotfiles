@@ -51,7 +51,7 @@ if [[ `hostname` == MacBook-Pro.local ]]; then
 fi
 
 if [[ `uname` = Linux ]]; then
-    alias open='xdg-open'
+    alias open='gio open'
 fi
 
 if [[ `uname` == Darwin ]]; then
